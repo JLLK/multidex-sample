@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MultiDex-Sample</string>
+
+    <string name="hello_world">Hello MainActivity!</string>
+    <string name="hello_a">Hello I\'am SampleActivityA!</string>
+    <string name="hello_b">Hello I\'am SampleActivityB!</string>
+    <string name="hello_c">Hello I\'am SampleActivityC!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_a">jmp to A</string>
+    <string name="btn_b">jmp to B</string>
+    <string name="btn_c">jmp to C</string>
+</resources>

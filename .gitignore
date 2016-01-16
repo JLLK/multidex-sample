@@ -6,7 +6,6 @@
 /build
 ### Android template
 # Built application files
-*.apk
 *.ap_
 
 # Files for the Dalvik VM
@@ -17,7 +16,6 @@
 
 # Gradle files
 gradle.properties
-build/
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -78,8 +76,6 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 ### Gradle template
-app/build/
-!app/build/outputs/apk/
 
 # Ignore Gradle GUI config
 gradle-app.setting

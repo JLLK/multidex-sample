@@ -54,8 +54,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile "com.github.jllk:multidex-installer:${project.multidexInstallerVersion}@aar" //https://github.com/JLLK/multidex-installer
-    compile "com.github.jllk:multidex-hook:${project.multidexHookVersion}@aar"           //https://github.com/JLLK/multidex-maker
+    compile "com.github.jllk:multidex-installer:0.0.4-beta@aar" //https://github.com/JLLK/multidex-installer
+    compile "com.github.jllk:multidex-hook:0.0.1-beta@aar"      //https://github.com/JLLK/multidex-maker
     compile "org.scala-lang:scala-library:2.11.7"
     compile "org.scala-lang:scala-reflect:2.11.7"
 }

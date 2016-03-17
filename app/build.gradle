@@ -1,15 +1,19 @@
 buildscript {
     repositories {
+        flatDir dirs: "$project.rootDir/libs"
         jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.1.1'
         classpath "jp.leafytree.gradle:gradle-android-scala-plugin:1.4"
+        classpath "com.github.jllk:gradle-android-maindexlist-plugin:1.0.0"
+        classpath "com.github.jllk:jllk-cda:1.0.0"
     }
 }
 
 apply plugin: 'com.android.application'
 apply plugin: "jp.leafytree.android-scala"
+apply plugin: com.github.jllk.gradle.JLLKMainDexListPlugin
 
 repositories {
     jcenter()
@@ -45,9 +49,8 @@ android {
             if (dx.additionalParameters == null) {
                 dx.additionalParameters = []
             }
-            dx.additionalParameters += "--main-dex-list=$projectDir/maindexlist.txt".toString()
+
             dx.additionalParameters += "--secondary-dexes-list=$projectDir/secondarydexeslist.txt".toString()
-            dx.additionalParameters += "--minimal-main-dex"
         }
     }
 }
